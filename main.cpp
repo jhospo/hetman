@@ -142,6 +142,15 @@ int main() {
     }
 
     //to poniżej już jest dosyć mocno wzorowane
+    //na oficjalnej stronie gnu
+
+    //WNIOSKI
+//    DFS jest znacznie szybsze, dzisiejsze zadanie zostało zrobione bez optymalizacji,
+//    ponieważ gdybysmy w generowaniu stanów, od razu generowali tylko stany poprawne,
+//    zmniejszyloby to liczbę stanów które są sprawdzane, zmniejszyłoby też rozmiar closed i open tym samym,
+//    co znacznie przyspieszyloby caly algorytm ponieważ, nie generowalibysmy stanów niepoprawnych,
+//    które musimyn i tak potem sprawdzic i dopisać do pamieci zajmując tym samym ram
+
     ofstream out("wyniki.dat");
     out << "# n BFS_closed DFS_closed BFS_open DFS_open BFS_time(ms) DFS_time(ms)\n";
     for (int i = n_start; i <= n_end; i++) {
