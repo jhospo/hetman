@@ -4,6 +4,7 @@
 #include <chrono>
 #include <fstream>
 #include <cstdlib>
+//JAN HOSPODARYSKO
 using namespace std;
 
 using namespace std;
@@ -150,7 +151,6 @@ int main() {
 //    zmniejszyloby to liczbę stanów które są sprawdzane, zmniejszyłoby też rozmiar closed i open tym samym,
 //    co znacznie przyspieszyloby caly algorytm ponieważ, nie generowalibysmy stanów niepoprawnych,
 //    które musimyn i tak potem sprawdzic i dopisać do pamieci zajmując tym samym ram
-
     ofstream out("wyniki.dat");
     out << "# n BFS_closed DFS_closed BFS_open DFS_open BFS_time(ms) DFS_time(ms)\n";
     for (int i = n_start; i <= n_end; i++) {
